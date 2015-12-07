@@ -1,0 +1,48 @@
+There are 10 test cases in total. Passing each test case is worth 5 points.
+If you fail a test you may still get points depending on your code.
+
+The test cases cover in order insertions and deletions, in reverse insertions
+and deletion, and random insertions and deletions. It also covers throwing
+exceptions.
+
+You can run the test cases by Running the HW1Test.java file. It should print
+some output to the console to help you, and to focus on the problem tests, you
+can comment/uncomment tests as you like. You can also modify tests for further
+debugging. However, you will be tested on the original testing setup.
+
+NOTE: In DictionaryST, get and contains methods have errors. They won't be
+updated but the corrections are below:
+
+	public boolean contains(String word) {
+		Entry e = dict.getClosestEntry(word);
+		return (word == e.word);
+	}
+
+should read
+
+	public boolean contains(String word) {
+		Entry e = dict.getClosestEntry(word);
+		return (e != null && word == e.word);
+	}
+ 
+AND
+
+	public String[] get(String word) {
+		Entry e = dict.getClosestEntry(word);
+		if (word == e.word) {
+			return e.defns;
+		} else {
+			return null;
+		}
+	}
+
+should read
+
+	public String[] get(String word) {
+		Entry e = dict.getClosestEntry(word);
+		if (e != null && word == e.word) {
+			return e.defns;
+		} else {
+			return null;
+		}
+	}

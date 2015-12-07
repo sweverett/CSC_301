@@ -1,0 +1,31 @@
+Follow below steps for Homework 3:
+
+1. There are 5 methods you will need to implement in LLRB.java,
+   along with 2 bonus methods
+
+2. I will be releasing a JUnit test file which will include tests
+   for the below 5 methods:
+   i) insert --- insert a key and fix the left-leaning red-black tree
+   ii) containsRightRedEdge --- check whether the tree has at least
+                                one right red edge
+   iii) containsConsecutiveLeftRedEdges --- check whether the tree has at least
+                                            two left red edges in a row
+   iv) countBlackEdgesOnLeftmostPath --- count the number of black edges
+                                         on the leftmost path
+   v) sameBlackEdgesCountOnAllPaths(int count) --- check whether every path from root
+                                                   to a leaf has "count" many black edges
+   
+   along with 2 tests for the bonus methods:
+   i) merge(LLRB llrb) --- insert all of the the keys of the given "llrb"
+   ii) fixLLRB --- given a tree satisfying the same black edges count invariant,
+                   fix its red edges so that it becomes a valid LLRB.
+                   permitted operations are: rotateRight, rotateLeft, flipColors.
+
+3. Make sure that your code passes all the tests in this test file.
+
+4. Commit and push your code into Bitbucket and verify your submission 
+   by checking the online repository.
+
+If you have any questions, post them on Piazza.
+    
+Good Luck!

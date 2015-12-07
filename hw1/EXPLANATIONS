@@ -1,0 +1,62 @@
+In the first class, we talked about two ways of implementing a Symbol Table:
+
+1) Linked lists
+2) Sorted arrays
+
+We discussed how to implement get and put methods using these two options
+and we analyzed their performance. Please check the companion site of the book
+for example code implementing these two options:
+
+http://algs4.cs.princeton.edu/31elementary/
+
+1) SequentialSearchST.java
+2) BinarySearchST.java
+
+This homework requires something similar, instead of defining the Symbol Table
+directly from linked lists and sorted arrays, it introduces an intermediary
+interface called BasicDict, which is explained briefly in its own file. The
+four methods in that interface are:
+
+1) public Entry getClosestEntry(String w);
+2) public void delete(String word);
+3) public void insert(Entry e);
+4) public int size();
+
+For LinkedList.java and SortedArray.java you will need to support these four
+methods. The methods delete, insert, and size are more or less standard. As
+for the getClosestEntry method, let us assume that the dictionary consists of
+entries for the words [anaconda, bear, cat]. Then, the call for "forest" should
+return "cat", the call for "alarm" should return "anaconda", and the call for
+"barracuda" should return either "anaconda" or "bear", as both are considered
+valid answers. You will need to figure out how to find these closest entries in
+order to implement the getClosestEntry method.
+
+Once these methods are implemented, you can work on the Symbol Table class
+DictionaryST. The DictionaryST class has a template type T which extends the
+BasicDict interface. The idea is that the end user can choose the LinkedList
+implementation or the SortedArray implementation. Either way, using this
+interface, DictionaryST class supports full functionality for the Symbol
+Table, with some modifications for put and delete methods:
+
+1) public void put(String word, String defn);
+
+    In general, the method put would search for the key (word), and if found
+    it would update its value (definitions) and if not found, it would insert
+    it into the table. You will need to do something similar; but instead of
+    overwriting the value, you will need to add this new definition into its
+    list of definitions. And if the definition already exists in its list of
+    definitions, then you should do nothing.
+
+2) public void delete(String word, String defn) throws Exception;
+
+    In general, the method delete would remove the key value pair from the
+    table. You will need to remove just that particular definition from the
+    list of definitions of that word, and remove the whole entry if all of its
+    definitions are removed. Also, you will need to throw an exception if the
+    word, definition pair is not found in the dictionary.
+    
+    IMPORTANT NOTE: LinkedList and SortedArray need not check for errors when
+    deleting. That check should already be done at this method. For simplicity,
+    please disregard the throws Exception in BasicDict, LinkedList and
+    SortedArray. If you like, you can still check for errors in LinkedList and
+    SortedArray, but those checks should be redundant.

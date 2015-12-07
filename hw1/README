@@ -1,0 +1,59 @@
+Follow below steps for Homework 1:
+
+1. Ensure that you are subscribed to the course mailing list.
+   http://mailman.depaul.edu/mailman/listinfo/csc301aut15/
+
+2. Download and install Oracle Java 8 SDK. 
+     http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+3. Download and install Git client software.
+   A. Windows: install Git for Windows
+               https://github.com/git-for-windows/git/releases
+               http://git-for-windows.github.io/
+
+      i. If installing to your own machine with administrator rights, get
+           Git-2.5.2-32-bit.exe
+             or
+           Git-2.5.2-64-bit.exe
+
+      ii. If installing without administrator rights, get
+           PortableGit-2.5.2-32-bit.7z.exe
+             or
+           PortableGit-2.5.2-64-bit.7z.exe
+   B. OS X: install Git for the Mac platform
+            http://git-scm.com/download/mac
+   C. Linux: install using your package manager, e.g., sudo apt-get install git
+
+4. Download and install Eclipse IDE for Java Developers (32 bit or 64 bit)
+   http://www.eclipse.org/downloads/installer.php
+
+5. To simplify access to the common Git operations, activate the Git toolbar
+   by selecting the Window menu + Perspective + Customize perspective...
+   In Customize perspective window go to Action Set Availability tab and
+   check the Git and the Git Navigation Actions entries.
+
+6. To clone this project locally and work on it using eclipse, import this project
+   by selecting the File menu + Import...
+   In Import window under Git choose Projects from Git and click Next
+   Choose Clone URI and click Next
+   Copy and paste Bitbucket clone string into URI and proceed
+   
+   You can access the Bitbucket clone string from your Bitbucket homepage
+   select this project and on the top left side click on "..." to see actions.
+   Choose clone from the list and clone string will already be highlighted.
+   Copy and paste into URI textbox in Eclipse and proceed
+   
+7. There are 10 methods you will need to implement.
+   Read every file and complete the methods with TODO comments.
+
+8. On Saturday, I will be releasing a JUnit test file, it will be on Bitbucket.
+   Pull that file using the pull button on the Eclipse Toolbar.
+   
+9. Make sure that your code passes all the tests in this test file.
+
+10. Commit and push your code into Bitbucket and verify your submission 
+    by checking the online repository.
+
+If you have any questions, send them to the emailing list.
+    
+Good Luck!

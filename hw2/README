@@ -1,0 +1,26 @@
+Follow below steps for Homework 2:
+
+1. There are 4 methods you will need to implement in BinarySearchTree.java
+
+2. I will be releasing a JUnit test file which will include 5 performance tests:
+   i) Random insertion efficiency for LinkedList
+   ii) In order insertion efficiency for SortedArray
+   iii) Search efficiency for SortedArray
+   iv) Random insertion efficiency for BST
+   v) Search efficiency for BST
+   
+   along with 5 tests for BST implementation:
+   i) size
+   ii) insert
+   iii) delete
+   iv) getClosestEntry
+   v) dictionaryST
+   
+3. Make sure that your code passes all the tests in this test file.
+
+4. Commit and push your code into Bitbucket and verify your submission 
+   by checking the online repository.
+
+If you have any questions, send them to the emailing list.
+    
+Good Luck!

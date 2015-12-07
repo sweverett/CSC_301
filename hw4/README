@@ -1,0 +1,19 @@
+1. There are 6 methods you will need to implement in two files:
+   AdjListGraph.java and AdjMatrixGraph.java
+
+2. In total there are 12 methods 2 of which are bonus and each method is worth 5 points.
+   
+3. You cannot use DFS for solving the problems in AdjListGraph.java, and
+   you cannot use BFS for solving the problems in AdjMatrixGraph.java
+
+4. There are two more files which you are not allowed to modify:
+   GraphBase.java and SimpleCycle.java
+
+5. You will be receiving a test file and make sure that your code passes all the tests.
+
+6. Commit and push your code into Bitbucket and verify your submission 
+   by checking the online repository.
+
+If you have any questions, post them on Piazza.
+    
+Good Luck!
